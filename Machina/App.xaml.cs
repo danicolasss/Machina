@@ -10,7 +10,8 @@ namespace Machina
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+             MainPage = new NavigationPage(new MainPage());
+            //MainPage = new ScannerPage(null);
         }
 
         protected override void OnStart()

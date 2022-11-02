@@ -11,7 +11,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="result.wav" />
+    <None Remove="scan.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="result.wav">
+      <CustomToolNamespace>E</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scan.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
   </ItemGroup>
